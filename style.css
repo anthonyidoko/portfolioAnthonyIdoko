@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+header nav ul li{
+    list-style: none;
+    display: inline;
+}
+header nav ul{
+    margin-left: auto;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    padding: 5px;
+}
+
+header nav{
+    display: flex;
+}
+body{
+    padding: 10px 0px;
+    background-color: cornsilk;
+}
+header nav h2{
+    margin-top: -5px;
+    font-weight: bolder;
+       
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+main div.first-colunm p{
+    background-color: crimson;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+.services {
+    display: flex;
+    justify-content: center;
+    background-color: darkgray;
+}
+.services ul li{
+    list-style: none;
+    padding: 2px;
+}
+
+.skills ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    background-color: darkolivegreen;
+}
+
+.skills ul li{
+    padding: 8px 2px;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+}
