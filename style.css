@@ -1,67 +1,119 @@
 *{
-    padding: 0;
-    border: 0;
     margin: 0;
+    padding: 0;
 }
 
-header nav ul li{
-    list-style: none;
-    display: inline;
+body{
+    display: flex;
+    width: 100vw;
+    background-image: url("images/background.jfif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    flex-direction: column;   
+}
+
+header{
+    padding: 10px 40px 10px 20px;
+}
+header nav {
+    display: flex;
+    flex-direction: row;
+}
+header nav h4{
+    text-align: center;
 }
 header nav ul{
+    display: flex;
     margin-left: auto;
 }
-
+header nav ul li{
+    list-style: none;
+}
 header nav ul li a{
     text-decoration: none;
-    padding: 5px;
+    color: white;
+    padding: 4px 10px;
 }
 
-header nav{
-    display: flex;
-}
-body{
-    padding: 10px 0px;
-    background-color: cornsilk;
-}
-header nav h2{
-    margin-top: -5px;
-    font-weight: bolder;
-       
-}
 main{
     display: flex;
     flex-direction: column;
+    padding: 10px 40px 10px 0px;
+    margin: 0 auto;
+
 }
-main div.first-colunm p{
-    background-color: crimson;
-    text-align: center;
-    padding: 20px;
-    font-size: 1.5rem;
+main h3{
+    text-align: center;   
+    text-shadow: 1px 2px #d3cdcd; 
+    color: rgb(147, 147, 158);
 }
-.services {
-    display: flex;
-    justify-content: center;
-    background-color: darkgray;
+main div.picture img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
 }
-.services ul li{
-    list-style: none;
-    padding: 2px;
+main div.picture{
+    margin: 5px auto;
 }
 
-.skills ul{
+main div.technologies{
+    width: 80vw;
+    margin: 5px auto;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
-    list-style: none;
-    background-color: darkolivegreen;
+    background: linear-gradient(to right, rgba(83, 82, 82, 0.644)0%, rgba(49, 47, 47, 0.657)25%, rgba(49, 47, 47, 0.6)50%, rgba(209, 206, 206, 0.657)75%, rgba(209, 206, 206, 0.657)0%, rgba(49, 47, 47, 0.657)25%, rgba(49, 47, 47, 0.6)50%, rgba(83, 82, 82, 0.6444)100%)
 }
 
-.skills ul li{
-    padding: 8px 2px;
-}
-
-img{
-    width: 50px;
+main div.technologies img{
+    width: 40px;
     height: 50px;
+    padding: 2px 8px;
+    flex: 2 0 40px;
+}
+main .techtitle{
+    text-shadow: 1px 2px #d3cdcd;
+    color: rgb(147, 147, 158);
+}
+
+footer div#socials{
+    background: rgb(6, 6, 24);
+    padding: 0 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+footer div#socials div.main{
+    padding-right: 10px;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+footer div#socials img{
+    width: 20px;
+    height:20px;
+    padding: 10px;
+}
+@media screen and (min-width:468px) {
+    main h3{
+        font-size: 2rem;
+    }
+    main div.picture img{
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+    }
+    main div.technologies img{
+        width: 80px;
+        height: 100px;
+        padding: 2px 8px;
+        flex: 2 0 50px;
+    }
+    main div.technologies{
+        justify-content: center;
+    }
+    
 }
