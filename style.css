@@ -33,8 +33,14 @@ header nav ul li{
 }
 header nav ul li a{
     text-decoration: none;
-    color: white;
+    color: burlywood;
     padding: 4px 10px;
+}
+header nav h4{
+    color: burlywood;
+}
+button{
+    background-color: black;
 }
 
 main{
@@ -85,6 +91,8 @@ footer div#socials{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
+    color: burlywood;
+    font-size: smaller;
 }
 footer div#socials div.main{
     padding-right: 10px;
