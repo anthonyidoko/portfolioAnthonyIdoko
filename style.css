@@ -67,6 +67,24 @@ main div.picture img{
 main div.picture{
     margin: 5px auto;
 }
+#cv img{
+    border-radius: 0;
+    width: 50px;
+    height: 50px;
+    position:relative;
+    left: -150px;
+}
+
+#cv-text{
+    position: relative;
+    left: -150px;
+    color:rgb(133, 136, 130)
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    z-index: 10;
+}
 
 main div.technologies{
     margin: 10px auto;
